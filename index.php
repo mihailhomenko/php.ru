@@ -39,10 +39,9 @@ App\Config::load(BASEPATH.'/config/configuration.php');
 
 Db\Db::connect();
 
-App\Parser::parsing('Forms\Template.php','Forms\add.php','<!--метка-->');
-if ($_POST['addcomment']){
-Modules\Router::routing($_POST['module'],$_POST['action']);    
-}
+App\Parser::parsing('Forms\Template.php','Forms\add.php','<!--metka1-->','<!--metka2-->');
+Modules\Router::routing($_POST['module'],$_POST['action']);
+
 
 
 ?>
