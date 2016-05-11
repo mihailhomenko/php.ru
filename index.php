@@ -36,12 +36,13 @@ App\Config::load(BASEPATH.'/config/configuration.php');
 /**
 * Database connection
 */
-Db\Db::connect();		
+
+Db\Db::connect();
 
 App\Parser::parsing('Forms\Template.php','Forms\add.php','<!--метка-->');
 if ($_POST['addcomment']){
-   Modules\Router::routing('Comment','delete');
+Modules\Router::routing($_POST['module'],$_POST['action']);    
 }
-//Modules\Router::routing(App\Request::getStr('module'),App\Request::getStr('action'));
-//Modules\Router::routing('Comment','delete');
+
+
 ?>

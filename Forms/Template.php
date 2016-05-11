@@ -27,9 +27,9 @@
 		<aside class="right-sidebar">
          <form action="index.php" method="post"> 
              <br><br>
-             <input type="submit" name="delete" value="Удалить">
+             <input type="submit" name="deleteform" value="Удалить">
              <br><br>
-             <input type="submit" name="add" value="Добавить">
+             <input type="submit" name="addform" value="Добавить">
         </form>
 		</aside>
 
