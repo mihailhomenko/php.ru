@@ -5,7 +5,9 @@ return(array
     "db_name"  => "test",
     "login"  => "admin",
     "pas"  => "1234",
-    "num_records" => "4"
+    "num_records" => "4",
+    "defolt_module" => "Comment",
+    "defolt_action" => "list"
 )
 )
 ?>

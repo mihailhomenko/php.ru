@@ -7,13 +7,13 @@ namespace App;
 
 class Parser
 {
-    public static function parsing($path,$metka)
+    public static function parsing($path,$array)
     {       
-        $d = file_get_contents($path);
-        $v = $metka['text'];
-        $pos = strripos($d,$metka['title']);
-        $d = substr_replace($d,' '.$v.' ',$pos,0);
-        return $d;
+        $temp = file_get_contents($path);
+        $text = $array['text'];
+        $pos = strripos($temp,$array['title']);
+        $temp = substr_replace($temp,' '.$text.' ',$pos,0);
+        return $temp;
         
     }
 }
