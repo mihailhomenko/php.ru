@@ -39,7 +39,7 @@ App\Config::load(BASEPATH.'/config/configuration.php');
 
 Db\Db::connect();
 
-App\Parser::parsing('Forms\Template.php',array('title'=>'<!--m-->',
+echo App\Parser::parsing('Forms\Template.php',array('title'=>'<!--m-->',
                                                'text'=>'global'));
 //include('Forms\Template.php');  
 //Modules\Router::Routing($_POST['module'],$_POST['action']);

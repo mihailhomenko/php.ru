@@ -13,7 +13,7 @@ class Parser
         $v = $metka['text'];
         $pos = strripos($d,$metka['title']);
         $d = substr_replace($d,' '.$v.' ',$pos,0);
-        echo $d;
+        return $d;
         
     }
 }
