@@ -22,7 +22,7 @@ include(BASEPATH.'/Autoload.php');
 *Header
 */
 
-App\Response::getHeader();
+App\Response::installHeader();
 /**
 * open Logfile 
 */
@@ -39,9 +39,9 @@ App\Config::load(BASEPATH.'/config/configuration.php');
 
 Db\Db::connect();
 
-App\Parser::parsing('Forms\Template.php','Forms\add.php','<!--metka1-->','<!--metka2-->');
-Modules\Router::routing($_POST['module'],$_POST['action']);
-
-
+App\Parser::parsing('Forms\Template.php',array('title'=>'<!--m-->',
+                                               'text'=>'global'));
+//include('Forms\Template.php');  
+//Modules\Router::Routing($_POST['module'],$_POST['action']);
 
 ?>
