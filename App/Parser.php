@@ -25,16 +25,11 @@ class Parser
     public static function parsing($path,$array)
     {       
         $temp = file_get_contents($path);
-        foreach ($array as $key => $value) {
-        $pos = strripos($temp,'<!--'.$key.'-->');
-        $temp = substr_replace($temp,' '.$value.' ',$pos,0);   
+        foreach ($array as $mark => $text) {
+        $pos = strripos($temp,'<!--'.$mark.'-->');
+        if ($pos){
+        $temp = substr_replace($temp,' '.$text.' ',$pos,0);}
         }
-        return $temp; 
-//        $text = $array['text'];
-//        $pos = strripos($temp,$array['title']);
-//        if ($pos){
-//        $temp = substr_replace($temp,' '.$text.' ',$pos,0);
-//        return $temp;
-//        } else return $temp;    
+        return $temp;    
     }
 }
