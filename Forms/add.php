@@ -1,3 +1,4 @@
+﻿
                 <form action="index.php" method="post">
                 <label for="user">Id пользователя: </label>
                 <input type="text" name="user" size="20" maxlength="50">
