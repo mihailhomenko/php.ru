@@ -18,13 +18,22 @@
 		<div class="container">
 			<main class="content">
              <br> 
-<!--title-->
-<p><!--of--></p>
+<!--message-->
+<!--text-->
+<!--include"Forms\add.php"-->
+<!--include"Forms\del.php"-->
+<!--include"Forms\list.php"-->
+
 			</main>
 		</div>
-        
+
 		<aside class="right-sidebar">
-         
+			<br>
+			<a href="http://php.ru">Главная</a>
+			<br>
+			<a href="http://php.ru/index.php?module=Comment&action=add">Добавление комментария</a>
+			<br>
+			<a href="http://php.ru/index.php?module=Comment&action=del">Удаление комментария</a>
         </aside>
     </div>
     </div>

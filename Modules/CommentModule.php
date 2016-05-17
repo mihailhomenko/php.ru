@@ -13,27 +13,32 @@ use Mappers;
 class CommentModule
 {
 	
-	public static function addCommentAction()
+	public function addAction()
 	{
-    $soome = new Models\Comment;
-    $soome->text = App\Request::getStr('text');
-    $soome->user_id = App\Request::getStr('user');
-    Mappers\CommentMapper::insert($soome);
-    echo "<script type=\"text/javascript\">alert(\"Комментарий добавлен\");</script>";
-
+        echo App\Parser::formparsing('Forms\Template.php',array('Forms\add.php'));
+        if (App\Request::getStr('addcomment')) {
+            $soome = new Models\Comment;
+            $soome->text = App\Request::getStr('text');
+            $soome->user_id = App\Request::getStr('user');
+            Mappers\CommentMapper::insert($soome);
+            echo "<script type=\"text/javascript\">alert(\"Комментарий добавлен\");</script>";
+        }
 	}
     
-    public static function listCommentAction()
+    public function listAction()
 	{
-    for ($i = Mappers\CommentMapper::getCommentsRow()-1;  $i >= Mappers\CommentMapper::getCommentsRow()-App\Config::get('num_records'); $i--) {
-    echo   '<div class="message">';
-    $soome = new Models\Comment;
-    $soome->text = '';
-    $arr = Mappers\CommentMapper::select($soome);
-    $arr = ($arr[$i]);
-    print_r($arr->text); 
-    echo '<div class = "of">'.($arr->getCreatedAt()).'</div>';
-    echo   '</div>';
-    }
+       echo App\Parser::formparsing('Forms\Template.php',array('Forms\list.php'));
 	}
+
+    public function delAction()
+    {
+        echo App\Parser::formparsing('Forms\Template.php',array('Forms\del.php'));
+        if (App\Request::getStr('delcomment')) {
+            $soome = new Models\Comment;
+            $soome->id = App\Request::getStr('id');
+            Mappers\CommentMapper::delete($soome);
+            echo "<script type=\"text/javascript\">alert(\"Удалено\");</script>";
+        }
+
+    }
 }

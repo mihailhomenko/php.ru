@@ -6,8 +6,9 @@ return(array
     "login"  => "admin",
     "pas"  => "1234",
     "num_records" => "4",
-    "defolt_module" => "Comment",
-    "defolt_action" => "list"
+    "default_module" => "Comment",
+    "default_action" => "list",
+    "modules_namespace" => "Modules\\",
 )
 )
 ?>

@@ -27,7 +27,7 @@ class Request
 	* @param string $def
 	* @return string
 	*/
-	public static function getStr($name, $def = ' ')
+	public static function getStr($name, $def = null)
 	{
 		$value = $def;
 		if (isset($_POST[$name])) {

@@ -22,6 +22,8 @@ include(BASEPATH.'/Autoload.php');
 *Header
 */
 
+use App\Request;
+
 App\Response::installHeader();
 /**
 * open Logfile 
@@ -39,11 +41,10 @@ App\Config::load(BASEPATH.'/config/configuration.php');
 
 Db\Db::connect();
 
-echo App\Parser::parsing('Forms\Template.php',array('title'=>'doc',
-                                                    'of'=>'alllovem',
-                                                    'ot'=>'god'
-                                                    ));
-//include('Forms\Template.php');  
-//Modules\Router::Routing($_POST['module'],$_POST['action']);
+Modules\Router::resolve(
+    Request::getStr('module'),
+    Request::getStr('action')
+);
 
-?>
+
+

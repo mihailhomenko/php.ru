@@ -22,13 +22,17 @@ class Autoload
 	*/
 	private static function get($className)
 	{	
-	$fileName = 
-	BASEPATH.
-	DIRECTORY_SEPARATOR.
-	str_replace('\\', DIRECTORY_SEPARATOR, $className).
-	'.php';
-	
-    require_once $fileName;
+		$fileName =
+		BASEPATH.
+		DIRECTORY_SEPARATOR.
+		str_replace('\\', DIRECTORY_SEPARATOR, $className).
+		'.php';
+
+		if(!file_exists($fileName)) {
+			return false;
+		}
+
+    	require_once $fileName;
 	}
 	
 	public static function load()
