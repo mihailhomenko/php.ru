@@ -31,7 +31,6 @@ class CommentMapper
 	{
 		
 		$pdo = Db\Db::getPdoInstance();
-		$comment->likes_count = '0';
 		$stmt = $pdo->prepare('INSERT INTO `comments` (`user_id`, `text`, `likes_count`) VALUES (:user_id, :text, :likes_count);');
 		$stmt->bindParam(':user_id', $comment->user_id, \PDO::PARAM_INT);
 		$stmt->bindParam(':text', $comment->text, \PDO::PARAM_STR);

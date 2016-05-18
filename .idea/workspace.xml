@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1ade9e9-7992-4d3c-8516-c40d31412a23" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Parser.php" afterPath="$PROJECT_DIR$/App/Parser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Request.php" afterPath="$PROJECT_DIR$/App/Request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Autoload.php" afterPath="$PROJECT_DIR$/Autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Forms/Template.php" afterPath="$PROJECT_DIR$/Forms/Template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Forms/del.php" afterPath="$PROJECT_DIR$/Forms/del.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Forms/add.php" afterPath="$PROJECT_DIR$/Forms/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mappers/CommentMapper.php" afterPath="$PROJECT_DIR$/Mappers/CommentMapper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/Comment.php" afterPath="$PROJECT_DIR$/Models/Comment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modules/CommentModule.php" afterPath="$PROJECT_DIR$/Modules/CommentModule.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modules/Router.php" afterPath="$PROJECT_DIR$/Modules/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/configuration.php" afterPath="$PROJECT_DIR$/config/configuration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="php.ru.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +40,8 @@
       <file leaf-file-name="Parser.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Parser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+            <state relative-caret-position="343">
+              <caret line="66" column="27" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -65,41 +59,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentModule.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommentModule.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/CommentModule.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="39" column="81" selection-start-line="39" selection-start-column="81" selection-end-line="39" selection-end-column="81" />
+            <state relative-caret-position="292">
+              <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Forms/list.php">
+      <file leaf-file-name="CommentMapper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mappers/CommentMapper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="133">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+              <folding>
+                <marker date="1463552690004" expanded="true" signature="519:615" placeholder="INSERT INTO `comments`... " />
+                <marker date="1463552690004" expanded="true" signature="1086:1124" placeholder="DELETE FROM " />
+                <marker date="1463552690004" expanded="true" signature="1395:1450" placeholder="UPDATE `comm... " />
+                <marker date="1463552690004" expanded="true" signature="1715:1763" placeholder="SELECT * FRO... comments" />
+                <marker date="1463552690004" expanded="true" signature="2161:2202" placeholder="SELECT * FRO... comments" />
+                <marker date="1463552690004" expanded="true" signature="2475:2515" placeholder="SELECT COUNT... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="del.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Forms/del.php">
+      <file leaf-file-name="Comment.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Models/Comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Forms/add.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="67" selection-start-line="6" selection-start-column="18" selection-end-line="7" selection-end-column="67" />
+            <state relative-caret-position="462">
+              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -121,7 +112,10 @@
         <option value="$PROJECT_DIR$/App/Parser.php" />
         <option value="$PROJECT_DIR$/Forms/del.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Forms/add.php" />
+        <option value="$PROJECT_DIR$/Mappers/CommentMapper.php" />
         <option value="$PROJECT_DIR$/Modules/CommentModule.php" />
+        <option value="$PROJECT_DIR$/Models/Comment.php" />
       </list>
     </option>
   </component>
@@ -226,12 +220,12 @@
       <workItem from="1463047522772" duration="15000" />
       <workItem from="1463047542827" duration="232000" />
       <workItem from="1463400050956" duration="5030000" />
-      <workItem from="1463409502285" duration="10495000" />
+      <workItem from="1463409502285" duration="16571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15772000" />
+    <option name="totallyTimeSpent" value="21848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -433,26 +427,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Parser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Forms/list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Forms/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="67" selection-start-line="6" selection-start-column="18" selection-end-line="7" selection-end-column="67" />
+        <state relative-caret-position="102">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -461,6 +439,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Forms/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Parser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="66" column="27" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -475,18 +477,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/Mappers/CommentMapper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="133">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding>
+            <marker date="1463552690004" expanded="true" signature="519:615" placeholder="INSERT INTO `comments`... " />
+            <marker date="1463552690004" expanded="true" signature="1086:1124" placeholder="DELETE FROM " />
+            <marker date="1463552690004" expanded="true" signature="1395:1450" placeholder="UPDATE `comm... " />
+            <marker date="1463552690004" expanded="true" signature="1715:1763" placeholder="SELECT * FRO... comments" />
+            <marker date="1463552690004" expanded="true" signature="2161:2202" placeholder="SELECT * FRO... comments" />
+            <marker date="1463552690004" expanded="true" signature="2475:2515" placeholder="SELECT COUNT... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Modules/CommentModule.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="39" column="81" selection-start-line="39" selection-start-column="81" selection-end-line="39" selection-end-column="81" />
+        <state relative-caret-position="292">
+          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
           <folding />
         </state>
       </provider>
